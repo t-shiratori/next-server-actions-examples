@@ -13,6 +13,7 @@ export async function incrementLike(prevState: number): Promise<LikeState> {
     const res = await fakeFetch<LikeState, LikeState>({
       reqBody: { likes: prevState },
       resBody: { likes: prevState + 1 },
+      delayTime: 500,
     }).catch((error) => {
       throw new Error(error);
     });
