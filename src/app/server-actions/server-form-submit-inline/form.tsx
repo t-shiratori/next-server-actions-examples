@@ -1,5 +1,6 @@
 import { InputText } from '@/components/form/InputText';
 import { SubmitButton } from '@/components/form/SubmitButton';
+import { showCookie } from '@/utils/showCookie';
 
 export const Form = () => {
   async function createInvoice(formData: FormData) {
@@ -13,6 +14,8 @@ export const Form = () => {
     };
 
     console.log('createInvoice: ', { rawFormData });
+
+    showCookie();
 
     // mutate data
     // revalidate cache

@@ -1,6 +1,7 @@
 'use server';
 
 import { fakeFetch } from '@/utils/fakeFetch';
+import { showCookie } from '@/utils/showCookie';
 
 export type LikeState = {
   likes: number;
@@ -8,6 +9,8 @@ export type LikeState = {
 
 export async function incrementLike(prevState: number): Promise<LikeState> {
   console.log('incrementLike: ', { prevState });
+
+  showCookie();
 
   try {
     const res = await fakeFetch<LikeState, LikeState>({
