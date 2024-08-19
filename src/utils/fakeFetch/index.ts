@@ -16,14 +16,14 @@ export const fakeFetch = async <TRequest, TResponse>({
   fail = false,
   resBody,
 }: Args<TRequest, TResponse>): Promise<Return<TResponse>> => {
-  console.log({ reqBody });
+  console.log('fakeFetch:', { reqBody });
 
   const result: Return<TResponse> = { ok: true, response: resBody };
 
   await new Promise((resolve, reject) => {
     if (fail) {
       setTimeout(() => {
-        console.log('error');
+        console.log('fetch error');
         result.ok = false;
         reject();
       }, delayTime);
