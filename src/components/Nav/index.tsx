@@ -23,6 +23,11 @@ export const Nav = () => {
         </Link>
       </li>
       <li>
+        <Link href={'/server-action-client-form-submit-bind'}>
+          server-action-client-form-submit-bind
+        </Link>
+      </li>
+      <li>
         <Link href={'/server-action-client-form-useFormState'}>
           server-action-client-form-useFormState
         </Link>
