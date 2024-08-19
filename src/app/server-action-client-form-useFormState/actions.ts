@@ -11,7 +11,7 @@ export async function somethingUpdate(
   prevState: any,
   formData: FormData
 ): Promise<ReturnState> {
-  console.log({ prevState, formData });
+  console.log('somethingUpdate: ', { prevState, formData });
 
   try {
     const res = await fakeFetch<FormData, undefined>({

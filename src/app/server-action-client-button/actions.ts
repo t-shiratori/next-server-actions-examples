@@ -7,7 +7,7 @@ export type LikeState = {
 };
 
 export async function incrementLike(prevState: number): Promise<LikeState> {
-  console.log({ prevState });
+  console.log('incrementLike: ', { prevState });
 
   try {
     const res = await fakeFetch<LikeState, LikeState>({
