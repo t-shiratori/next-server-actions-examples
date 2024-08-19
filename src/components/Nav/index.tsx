@@ -10,8 +10,8 @@ export const Nav = () => {
         <span className="m-4 font-bold">server-actions</span>
         <ul className="ml-12">
           <li className="list-disc mt-2">
-            <Link href={'/server-actions/server-form-submit'}>
-              server-form-submit
+            <Link href={'/server-actions/server-form-submit-inline'}>
+              server-form-submit-inline
             </Link>
           </li>
           <li className="list-disc mt-2">
