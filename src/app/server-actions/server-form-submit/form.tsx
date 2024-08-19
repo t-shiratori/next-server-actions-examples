@@ -12,7 +12,7 @@ export const Form = () => {
       status: formData.get('status'),
     };
 
-    console.log({ rawFormData });
+    console.log('createInvoice: ', { rawFormData });
 
     // mutate data
     // revalidate cache
