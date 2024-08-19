@@ -8,7 +8,7 @@ type Props = {
 export default function Layout({ children }: Props) {
   return (
     <div className="mt-8">
-      <Heading>server-action-client-button</Heading>
+      <Heading>server-actions-client-form-submit-bind</Heading>
       <div className="mt-8">{children}</div>
     </div>
   );

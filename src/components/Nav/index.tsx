@@ -7,35 +7,30 @@ export const Nav = () => {
         <Link href={'/'}>Home</Link>
       </li>
       <li>
-        <Link href={'/about'}>About</Link>
-      </li>
-      <li>
-        <Link href={'/about/aboutChild'}>About Child</Link>
-      </li>
-      <li>
-        <Link href={'/server-action-server-form'}>
-          server-action-server-form
-        </Link>
-      </li>
-      <li>
-        <Link href={'/server-action-client-form-submit'}>
-          server-action-client-form-submit
-        </Link>
-      </li>
-      <li>
-        <Link href={'/server-action-client-form-submit-bind'}>
-          server-action-client-form-submit-bind
-        </Link>
-      </li>
-      <li>
-        <Link href={'/server-action-client-form-useFormState'}>
-          server-action-client-form-useFormState
-        </Link>
-      </li>
-      <li>
-        <Link href={'/server-action-client-button'}>
-          server-action-client-button
-        </Link>
+        <span className="m-4 font-bold">server-actions</span>
+        <ul className="ml-12">
+          <li className="list-disc mt-2">
+            <Link href={'/server-actions/server-form'}>server-form</Link>
+          </li>
+          <li className="list-disc mt-2">
+            <Link href={'/server-actions/client-form-submit'}>
+              client-form-submit
+            </Link>
+          </li>
+          <li className="list-disc mt-2">
+            <Link href={'/server-actions/client-form-submit-bind'}>
+              client-form-submit-bind
+            </Link>
+          </li>
+          <li className="list-disc mt-2">
+            <Link href={'/server-actions/client-form-useFormState'}>
+              client-form-useFormState
+            </Link>
+          </li>
+          <li className="list-disc mt-2">
+            <Link href={'/server-actions/client-button'}>client-button</Link>
+          </li>
+        </ul>
       </li>
     </ul>
   );
