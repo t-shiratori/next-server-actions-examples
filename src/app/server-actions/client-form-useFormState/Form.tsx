@@ -13,28 +13,12 @@ const initialState: ReturnState = {
 export const Form = () => {
   const [state, formAction] = useFormState(somethingUpdate, initialState);
 
-  const [customerId, setCustomerId] = useState('');
-  const [amount, setAmount] = useState('');
-  const [status, setStatus] = useState('');
-
   return (
     <div>
       <form action={formAction}>
-        <InputText
-          name="customerId"
-          value={customerId}
-          onChange={(e) => setCustomerId(e.target.value)}
-        />
-        <InputText
-          name="amount"
-          value={amount}
-          onChange={(e) => setAmount(e.target.value)}
-        />
-        <InputText
-          name="status"
-          value={status}
-          onChange={(e) => setStatus(e.target.value)}
-        />
+        <InputText name="customerId" />
+        <InputText name="amount" />
+        <InputText name="status" />
         <SubmitButton label="送信" />
       </form>
 
